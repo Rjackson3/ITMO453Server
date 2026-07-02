@@ -1,0 +1,7 @@
+---
+- name: Create administrator
+  user:
+    name: adminuser
+    groups: sudo
+    append: yes
+    shell: /bin/bash
