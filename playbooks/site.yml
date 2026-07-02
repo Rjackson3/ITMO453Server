@@ -1,1 +1,11 @@
+---
+- hosts: webservers
+  become: true
 
+  roles:
+    - users
+    - ssh
+    - firewall
+    - nginx
+    - logging
+    - monitoring
